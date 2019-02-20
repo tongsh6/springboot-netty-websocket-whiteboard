@@ -110,7 +110,7 @@
             };
 
             document.getElementById('connectButton').onclick = function () {
-               socket = new WebSocket("ws://localhost:8080/websocket");
+               socket = new WebSocket("ws://45.77.239.38:8080/websocket");
 
                 socket.onmessage = function(event) {
                     let messages = event.data.split('\n');
